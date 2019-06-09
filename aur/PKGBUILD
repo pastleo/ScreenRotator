@@ -1,16 +1,16 @@
 # Maintainer: Marco Gulino <marco.gulino@gmail.com>
 
 pkgname=screenrotator-git
-pkgver=r23.1a78a4b
+pkgver=r26.429aa0f
 pkgrel=1
 epoch=1
 pkgdesc='Automatic screen rotation daemon for X11'
 arch=('i686' 'x86_64')
-url='https://github.com/GuLinux/ScreenRotator'
+url='https://github.com/pastleo/ScreenRotator.git'
 license=('GPL3')
 depends=('qt5-base' 'qt5-x11extras' 'libxi' 'libxrandr' 'qt5-sensors')
 makedepends=('git' 'cmake' 'qt5-tools')
-source=("${pkgname}::git+${url}")
+source=("${pkgname}::git+${url}#branch=feature/rotate-control")
 sha256sums=('SKIP')
 
 pkgver() {
