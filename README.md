@@ -29,6 +29,36 @@ make all
 sudo make install
 ```
 
+## Why this fork?
+
+the AUR [screenrotator](https://aur.archlinux.org/packages/screenrotator-git/) can auto-rotate my 2-in-1 laptop with ease,
+
+however, sometimes I want to rotate when I want it to, so I modify a bit and make a fork
+
+by default this fork still does auto-rotation (to make it behave the same as original), but you can turn it off: https://youtu.be/10Fbdn8byM8
+
+when auto-rotation is off (or maybe I should call it manual mode), rotation can be done like this: https://youtu.be/NRrZMKTKHSs
+
+## How to use this fork on ArchLinux
+
+create and cd into an empty folder somewhere in your file system, download and put the `PKGBUILD` file inside:
+
+https://github.com/pastleo/ScreenRotator/blob/feature/rotate-control-aur/aur/PKGBUILD
+
+then `makepkg -si` to build and install to your system
+
+### How to use manual mode instead of auto-rotation at login?
+
+by setting `DEFAULT_AUTO_ROTATION_OFF` environment variable, initial auto-rotation will be off (aka manual mode) at login:
+
+https://github.com/pastleo/ScreenRotator/commit/429aa0fb4cfeb751684e78f0724e2ea2aee1e693#diff-5cd02d4f22f42f4d7a72b791395c07d3R56
+
+for example, in `~/.xprofile`:
+
+```
+export DEFAULT_AUTO_ROTATION_OFF=true
+```
+
 ## Links
 
 Main icon: https://www.iconfinder.com/icons/326583/orientation_rotation_screen_icon#size=256
