@@ -41,11 +41,13 @@ when auto-rotation is off (or maybe I should call it manual mode), rotation can 
 
 ## How to use this fork on ArchLinux
 
-create and cd into an empty folder somewhere in your file system, download and put the `PKGBUILD` file inside:
+Build ScreenRotator using this `PKGBUILD`: https://github.com/pastleo/ScreenRotator/blob/feature/rotate-control-aur/aur/PKGBUILD
 
-https://github.com/pastleo/ScreenRotator/blob/feature/rotate-control-aur/aur/PKGBUILD
-
-then `makepkg -si` to build and install to your system
+```sh
+git clone -b feature/rotate-control-aur https://github.com/pastleo/ScreenRotator.git
+cd ScreenRotator/aur
+makepkg -si
+```
 
 ### How to use manual mode instead of auto-rotation at login?
 
