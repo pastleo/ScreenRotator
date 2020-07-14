@@ -8,7 +8,7 @@ pkgdesc='Automatic screen rotation daemon for X11'
 arch=('i686' 'x86_64')
 url='https://github.com/pastleo/ScreenRotator.git'
 license=('GPL3')
-depends=('qt5-base' 'qt5-x11extras' 'libxi' 'libxrandr' 'qt5-sensors')
+depends=('qt5-base' 'qt5-x11extras' 'libxi' 'libxrandr' 'qt5-sensors' 'iio-sensor-proxy')
 makedepends=('git' 'cmake' 'qt5-tools')
 source=("${pkgname}::git+${url}#branch=feature/rotate-control")
 sha256sums=('SKIP')
